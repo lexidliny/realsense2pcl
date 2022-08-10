@@ -10,8 +10,8 @@ include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
-#set(CMAKE_CXX_STANDARD 11)
-#set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 
 add_executable(${PROJECT_NAME} rs2pcd.cpp)
 target_link_libraries(${PROJECT_NAME} 
